@@ -3,6 +3,9 @@ package com.neopragma.fizzbuzz;
 public class Fizzbuzz 
 {
     public String processNumber(int number) {
-    	throw new RuntimeException("Write me!");
+        if (number % 3 ==0) {
+            return "Fizz";
+        }
+        return String.valueOf(number);
     }
 }
