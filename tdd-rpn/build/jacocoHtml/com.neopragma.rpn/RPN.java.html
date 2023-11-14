@@ -10,8 +10,43 @@ public class RPN
 <span class="fc" id="L10">    }</span>
 
     public String enter(String token) {
-<span class="fc" id="L13">        stack.push(token);</span>
-<span class="fc" id="L14">        return stack.peek();</span>
+<span class="fc bfc" id="L13" title="All 4 branches covered.">        if (!isOperator(token) &amp;&amp; stack.size() &gt; 1) {</span>
+<span class="fc" id="L14">            throw new RuntimeException(&quot;Please enter an operator&quot;);</span>
+        }
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (isOperator(token)) {</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">            if (stack.size() == 2) {</span>
+<span class="pc bpc" id="L18" title="1 of 5 branches missed.">                switch(token) {</span>
+                    case &quot;+&quot;:
+<span class="fc" id="L20">                        stack.push(String.valueOf(Double.parseDouble(stack.pop())</span>
+<span class="fc" id="L21">                                + Double.parseDouble(stack.pop())));</span>
+<span class="fc" id="L22">                        break;</span>
+                    case &quot;-&quot;:
+<span class="fc" id="L24">                        stack.push(String.valueOf(Double.parseDouble(stack.pop())</span>
+<span class="fc" id="L25">                                - Double.parseDouble(stack.pop())));</span>
+<span class="fc" id="L26">                        break;</span>
+                    case &quot;*&quot;:
+<span class="fc" id="L28">                        stack.push(String.valueOf(Double.parseDouble(stack.pop())</span>
+<span class="fc" id="L29">                                * Double.parseDouble(stack.pop())));</span>
+<span class="fc" id="L30">                        break;</span>
+                    case &quot;/&quot;:
+<span class="fc" id="L32">                        stack.push(String.valueOf(Double.parseDouble(stack.pop())</span>
+<span class="fc" id="L33">                                / Double.parseDouble(stack.pop())));</span>
+                        break;
+                }
+<span class="fc" id="L36">                 return stack.peek();</span>
+            } else {
+<span class="fc" id="L38">                throw new RuntimeException(&quot;Please enter another number&quot;);</span>
+            }
+        }
+<span class="fc" id="L41">        stack.push(token);</span>
+<span class="fc" id="L42">        return stack.peek();</span>
+    }
+
+    private boolean isOperator(String token) {
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        return token.equals(&quot;+&quot;) ||</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">                token.equals(&quot;-&quot;) ||</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">                token.equals(&quot;*&quot;) ||</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">                token.equals(&quot;/&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
