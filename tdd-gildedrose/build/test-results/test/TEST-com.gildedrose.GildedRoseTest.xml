@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-22T17:15:37" hostname="Davids-MacBook-Pro.local" time="0.008">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-14T15:55:57" hostname="Davids-MacBook-Pro.local" time="0.009">
   <properties/>
-  <testcase name="foo()" classname="com.gildedrose.GildedRoseTest" time="0.008"/>
+  <testcase name="Sulfuras_Hand_of_Ragnaros_does_not_change_quality()" classname="com.gildedrose.GildedRoseTest" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
