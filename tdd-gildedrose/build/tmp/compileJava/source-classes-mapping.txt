@@ -1,3 +1,5 @@
+com/gildedrose/ItemCategory.java
+ com.gildedrose.ItemCategory
 com/gildedrose/Item.java
  com.gildedrose.Item
 com/gildedrose/GildedRose.java
