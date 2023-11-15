@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-15T15:26:03" hostname="Davids-MacBook-Pro.local" time="0.017">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-11-15T15:45:05" hostname="Davids-MacBook-Pro.local" time="0.043">
   <properties/>
-  <testcase name="it_adjusts_quality_correctly(Item[], int)[1]" classname="com.gildedrose.GildedRoseTest" time="0.017"/>
+  <testcase name="non_legendary_items_decrement_sell_in_date()" classname="com.gildedrose.GildedRoseTest" time="0.014"/>
+  <testcase name="it_adjusts_quality_correctly(Item, int)[1]" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
+  <testcase name="it_adjusts_quality_correctly(Item, int)[2]" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="it_adjusts_quality_correctly(Item, int)[3]" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="it_adjusts_quality_correctly(Item, int)[4]" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="it_adjusts_quality_correctly(Item, int)[5]" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="it_adjusts_quality_correctly(Item, int)[6]" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

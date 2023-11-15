@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.neopragma.samples.CalcRefactoredTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2023-11-13T15:48:45" hostname="Davids-MacBook-Pro.local" time="0.001">
+<testsuite name="com.neopragma.mock.CatFactsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-11-15T16:01:07" hostname="Davids-MacBook-Pro.local" time="0.922">
   <properties/>
-  <testcase name="it_sums_two_values()" classname="com.neopragma.samples.CalcRefactoredTest" time="0.0">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2.5&gt; but was: &lt;3.5&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2.5&gt; but was: &lt;3.5&gt;
+  <testcase name="play()" classname="com.neopragma.mock.CatFactsTest" time="0.922">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;&quot;\&quot;Here\u0027s a cat fact.\&quot;&quot;&gt; but was: &lt;&quot;\&quot;Here\u0027s another cat fact.\&quot;&quot;&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;&quot;\&quot;Here\u0027s a cat fact.\&quot;&quot;&gt; but was: &lt;&quot;\&quot;Here\u0027s another cat fact.\&quot;&quot;&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:894)
-	at app//com.neopragma.samples.CalcRefactoredTest.it_sums_two_values(CalcRefactoredTest.java:24)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at app//com.neopragma.mock.CatFactsTest.play(CatFactsTest.java:22)
 	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,7 +95,6 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="it_sums_three_values()" classname="com.neopragma.samples.CalcRefactoredTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

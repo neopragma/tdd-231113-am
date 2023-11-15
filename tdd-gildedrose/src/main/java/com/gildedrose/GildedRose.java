@@ -9,30 +9,32 @@ class GildedRose {
 
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
-            if (items[i].category == ItemCategory.LEGENDARY) {
+            Item item = items[i];
+            if (item.category == ItemCategory.LEGENDARY) {
                 continue;
             }
-            if (items[i].category == ItemCategory.STANDARD
-                || items[i].category == ItemCategory.CONJURED) {
-                decrementQuality(items[i]);
+            if (item.category == ItemCategory.STANDARD
+                || item.category == ItemCategory.CONJURED) {
+                decrementQuality(item);
             } else {
-                incrementQuality(items[i]);
-                if (items[i].category == ItemCategory.BACKSTAGE_PASS) {
-                    if (items[i].sellIn < 11) {
-                        incrementQuality(items[i]);
+                incrementQuality(item);
+                if (item.category == ItemCategory.BACKSTAGE_PASS) {
+                    if (item.sellIn < 11) {
+                        incrementQuality(item);
                     }
 
-                    if (items[i].sellIn < 6) {
-                        incrementQuality(items[i]);
+                    if (item.sellIn < 6) {
+                        incrementQuality(item);
                     }
                 }
             }
 
-            items[i].sellIn = items[i].sellIn - 1;
+            item.sellIn = item.sellIn - 1;
 
-            if (items[i].sellIn < 0) {
-                pastTheSellInDate(items[i]);
+            if (item.sellIn < 0) {
+                pastTheSellInDate(item);
             }
+            items[i] = item;
         }
     }
 
